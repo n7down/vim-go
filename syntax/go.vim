@@ -375,8 +375,10 @@ function! s:hi()
 
   " :GoDebug commands
   if go#config#HighlightDebug()
-    hi GoDebugBreakpoint term=standout ctermbg=117 ctermfg=0 guibg=#BAD4F5  guifg=Black
-    hi GoDebugCurrent term=reverse  ctermbg=12  ctermfg=7 guibg=DarkBlue guifg=White
+    "hi GoDebugBreakpoint term=standout ctermbg=117 ctermfg=0 guibg=#BAD4F5  guifg=Black
+    hi GoDebugBreakpoint term=standout ctermbg=0 ctermfg=LightBlue guibg=#BAD4F5  guifg=Black
+    "hi GoDebugCurrent term=reverse  ctermbg=12  ctermfg=7 guibg=DarkBlue guifg=White
+    hi GoDebugCurrent term=reverse  ctermbg=DarkBlue  ctermfg=7 guibg=DarkBlue guifg=White
   endif
 endfunction
 

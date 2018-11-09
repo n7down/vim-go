@@ -942,6 +942,6 @@ function! go#debug#Breakpoint(...) abort
 endfunction
 
 sign define godebugbreakpoint text=> texthl=GoDebugBreakpoint
-sign define godebugcurline text== linehl=GoDebugCurrent texthl=GoDebugCurrent
+sign define godebugcurline text=* linehl=GoDebugCurrent texthl=GoDebugCurrent
 
 " vim: sw=2 ts=2 et
